@@ -1,7 +1,6 @@
 .auth-container {
   display: flex;
   justify-content: space-around;
-  border: 1px solid red;
   padding: 20px;
 }
 
@@ -11,7 +10,6 @@
 
 .auth-form-container {
   width: 100%;
-  border: 1px solid blue;
 }
 
 @media (min-width: 576px) {
