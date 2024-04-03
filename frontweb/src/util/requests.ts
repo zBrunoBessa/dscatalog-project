@@ -3,7 +3,7 @@ import qs from 'qs'
 import history from './history';
 import jwtDecode from 'jwt-decode'
 
-type Role = 'ROLE_OPERATOR' | 'ROLA_ADMIN'
+type Role = 'ROLE_OPERATOR' | 'ROLE_ADMIN'
 
 export type TokenData = {
   exp: number;
@@ -111,7 +111,7 @@ export const isAuthenticated = () : boolean => {
 }
 
 export const hasAnyRoles = (roles: Role[]) :boolean => {
-  
+
   if(roles.length === 0) {
     return true
   }
